@@ -1,0 +1,6 @@
+<div class="menu-flex">
+  <a *ngFor="let option of options" [routerLink]="option.path" mat-button [routerLinkActive]="['active']"
+    [routerLinkActiveOptions]="{ exact: true }">
+    {{ option.label }}
+  </a>
+</div>
